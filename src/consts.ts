@@ -4,5 +4,5 @@
 export const SITE_TITLE = "Brynoff";
 export const SITE_DESCRIPTION = "Wales is where the heart is!";
 export const S3 = import.meta.env.PROD
-  ? "https://brynoffee.s3.eu-west-2.amazonaws.com/video"
+  ? "https://brynoffee.s3.eu-west-2.amazonaws.com/videos"
   : "/video";
