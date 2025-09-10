@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "svg": "npx svg-symbol-sprite -i ./icons -o ./public/sprites.svg",
+    "shapes": "npx svg-symbol-sprite -i ./icons/mushrooms -o ./public/shapes.svg",
     "manifest": "node ./scripts/generate-manifest.js"
   },
   "dependencies": {

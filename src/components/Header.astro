@@ -13,12 +13,19 @@ import Icon from "./Icon.astro";
 </script>
 <header class="satuation-filter">
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
-    <div class="internal-links text-start">
+    <h2 class="flex flex-row items-center">
+      <Icon ctx="shroom-2" size="3" src="shapes" colour="forestgreen" />
+      <a href="/">{SITE_TITLE}</a>
+    </h2>
+    <div class="flex gap-8 items-center internal-links text-start">
       <HeaderLink href="/a">Retreats</HeaderLink>
+      <!-- <Icon ctx="compass" size="1" /> -->
       <HeaderLink href="/b">Your stay</HeaderLink>
-      <HeaderLink href="/c">Getting here</HeaderLink>
+      <!-- <Icon ctx="compass" size="1" /> -->
+      <HeaderLink href="/c">Events</HeaderLink>
+      <!-- <Icon ctx="compass" size="1" /> -->
       <HeaderLink href="/d">Off grid</HeaderLink>
+      <!-- <Icon ctx="compass" size="1" /> -->
       <HeaderLink href="/e">Getting here</HeaderLink>
     </div>
     <div class="">
@@ -35,14 +42,18 @@ import Icon from "./Icon.astro";
     margin: 0;
     padding: 0 1em;
     /* background-color: rgba(237, 237, 237, 0.828); */
-    background-color: rgb(236 240 195 / 83%);
-    backdrop-filter: blur(0.3em);
+    background-color: white;
+    backdrop-filter: blur(0.5em);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
-    z-index: 100;
+    z-index: 101;
     /* border-bottom: 0.125em solid var(--primary-green); */
-    transition: filter 1s;
+    transition:
+      filter,
+      background-color 1s;
     &.satuation-filter {
       filter: saturate(0.35);
+      background-color: rgba(255, 255, 255, 0.724);
+      /* background-color: rgb(236 240 195 / 65%); */
     }
   }
   h2 {
@@ -60,16 +71,20 @@ import Icon from "./Icon.astro";
     justify-content: space-between;
   }
   nav a {
-    padding: 1em 0.5em;
-    color: var(--primary-green);
-    border-bottom: 4px solid transparent;
+    /* padding: 1em 0.5em; */
+    color: darkgreen;
+    border-bottom: 0.25em solid transparent;
     text-decoration: none;
     /* font-family: "Atkinson", sans-serif; */
     font-size: smaller;
+    transition: all 0.4s;
+  }
+  nav a:hover {
+    color: var(--accent);
+    border-bottom: 0.25em solid var(--accent);
   }
   nav a.active {
     /* text-decoration: none; */
-    /* border-bottom-color: var(--accent); */
   }
   .social-links,
   .social-links a {

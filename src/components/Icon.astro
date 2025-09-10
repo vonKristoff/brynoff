@@ -1,12 +1,19 @@
 ---
 interface Props {
-  ctx: "map";
+  ctx?: string;
   size?: string;
   weight?: string;
   colour?: string;
+  src?: string;
 }
-const { ctx, weight = "2", size = "1", colour = "currentColor" } = Astro.props;
-const href = `/sprites.svg#icon-${ctx}`;
+const {
+  ctx,
+  weight = "2",
+  size = "1",
+  colour = "currentColor",
+  src = "sprites",
+} = Astro.props;
+const href = `/${src}.svg#icon-${ctx}`;
 ---
 
 <svg
