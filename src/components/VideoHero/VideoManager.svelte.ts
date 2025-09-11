@@ -6,6 +6,7 @@ class VideoManager {
     this.ids = ids;
   }
   ready(node: HTMLVideoElement) {
+    this.updateDebug(node.dataset.videoId, node.duration);
     if (this.collection.length < 1) {
       node.dataset.status = "PLAYING";
       node.play();

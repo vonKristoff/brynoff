@@ -3,15 +3,18 @@ import { S3 } from "$lib/consts";
 export default (node: HTMLVideoElement, { id }: { id: string }) => {
   node.setAttribute("src", `${S3}/IMG_${id}.mp4`);
   node.dataset.videoId = id;
+  node.volume = 0;
+  node.load();
   const canplay = (e) => {
     if ((e.target as HTMLVideoElement).dataset.videoId === id) {
       VideoManager.ready(node);
     }
   };
+
   const timeupdate = (e) => {
     if ((e.target as HTMLVideoElement).dataset.videoId === id) {
       const timeRemaining = node.duration - node.currentTime;
-      // VideoManager.updateDebug(id, timeRemaining);
+      VideoManager.updateDebug(id, timeRemaining);
       if (timeRemaining <= 2) {
         VideoManager.next(id);
       }
@@ -20,11 +23,21 @@ export default (node: HTMLVideoElement, { id }: { id: string }) => {
       }
     }
   };
-  node.addEventListener("canplay", canplay);
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  if (isIOS) {
+    node.addEventListener("loadedmetadata", canplay);
+  } else {
+    node.addEventListener("canplay", canplay);
+  }
   node.addEventListener("timeupdate", timeupdate);
   return {
     destroy() {
-      node.removeEventListener("canplay", canplay);
+      if (isIOS) {
+        node.removeEventListener("loadedmetadata", canplay);
+      } else {
+        node.removeEventListener("canplay", canplay);
+      }
+      //   node.removeEventListener("canplay", canplay);
       node.removeEventListener("timeupdate", timeupdate);
     },
   };

@@ -37,13 +37,14 @@ body {
   padding: 0;
   text-align: left;
   background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 600px;
+  /* background-size: 100% 600px; */
   word-wrap: break-word;
   overflow-wrap: break-word;
   /* color: rgb(var(--gray-dark)); */
   color: darkolivegreen;
   font-size: 20px;
   line-height: 1.7;
+  overflow-x: hidden;
 }
 #page {
   background-color: oldlace;

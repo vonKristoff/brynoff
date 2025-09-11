@@ -11,8 +11,8 @@
 <div
   class="absolute z-10 grid h-screen w-screen place-content-center font-serif"
 >
-  <div class="flex flex-col justify-center items-center px-8">
-    <div class="text-white text-8xl">{title}</div>
+  <div class="flex flex-col justify-center items-center px-8 wrap-anywhere">
+    <div class="text-white text-6xl md:text-8xl">{title}</div>
     {#if children}
       {@render children()}
     {/if}
@@ -20,15 +20,21 @@
 </div>
 {#each VideoManager.ids as id}
   <div class="video absolute grid place-content-center">
-    <video use:videoStream={{ id }} data-status="IDLE" muted playsinline
-    ></video>
+    <video
+      use:videoStream={{ id }}
+      data-status="IDLE"
+      muted
+      playsinline
+      preload="metadata"><source src="" type="video/mp4" /></video
+    >
   </div>
 {/each}
 
-<!-- <ul class="absolute bottom-0 z-20">
-	{#each VideoManager.ids as id}
-		<li>{id}: {VideoManager.clock?.[id] || 0}</li>
-	{/each}
+<!-- 
+<ul class="absolute bottom-0 z-20">
+  {#each VideoManager.ids as id}
+    <li>{id}: {VideoManager.debug?.[id] || 0}</li>
+  {/each}
 </ul> -->
 
 <style>
@@ -36,8 +42,8 @@
     transition: all 2s;
   }
   video {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100dvh;
     object-fit: cover;
   }
   :global(.video:has(video[data-status="TRANSITION-OUT"])) {

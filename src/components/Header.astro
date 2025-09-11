@@ -17,7 +17,7 @@ import Icon from "./Icon.astro";
       <Icon ctx="shroom-2" size="3" src="shapes" colour="forestgreen" />
       <a href="/">{SITE_TITLE}</a>
     </h2>
-    <div class="flex gap-8 items-center internal-links text-start">
+    <div class="gap-8 items-center internal-links text-start hidden md:flex">
       <HeaderLink href="/a">Retreats</HeaderLink>
       <!-- <Icon ctx="compass" size="1" /> -->
       <HeaderLink href="/b">Your stay</HeaderLink>
@@ -37,7 +37,8 @@ import Icon from "./Icon.astro";
   header {
     position: fixed;
     font-family: serif;
-    width: 100%;
+    width: 100dvw;
+    overflow-x: hidden;
     top: 0;
     margin: 0;
     padding: 0 1em;
