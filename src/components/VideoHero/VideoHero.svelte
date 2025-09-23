@@ -25,6 +25,7 @@
       data-status="IDLE"
       muted
       playsinline
+      autoplay
       preload="metadata"><source src="" type="video/mp4" /></video
     >
   </div>
