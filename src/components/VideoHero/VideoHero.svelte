@@ -12,7 +12,7 @@
   class="absolute z-10 grid h-screen w-screen place-content-center font-serif"
 >
   <div class="flex flex-col justify-center items-center px-8 wrap-anywhere">
-    <h1 class="text-white text-6xl md:text-8xl">{title}</h1>
+    <h1 class="text-white text-4xl md:text-8xl">{title}</h1>
     {#if children}
       {@render children()}
     {/if}

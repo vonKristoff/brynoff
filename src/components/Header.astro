@@ -69,7 +69,17 @@ import Icon from "./Icon.astro";
     display: grid;
     align-items: center;
     justify-content: space-between;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 0.4fr;
+  }
+  @media (max-width: 760px) {
+    nav {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 1080px) {
+    nav {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
   }
   nav a {
     /* padding: 1em 0.5em; */
@@ -79,6 +89,7 @@ import Icon from "./Icon.astro";
     /* font-family: "Atkinson", sans-serif; */
     font-size: smaller;
     transition: all 0.4s;
+    line-height: 1rem;
   }
   nav a:hover {
     color: var(--accent);

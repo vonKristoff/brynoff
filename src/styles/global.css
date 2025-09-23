@@ -30,7 +30,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-color: rgb(201, 216, 191);
+  /* background: linear-gradient(var(--gray-gradient)) no-repeat; */
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: darkolivegreen;
@@ -66,13 +67,13 @@ h2 {
   /* font-size: 2.441em; */
 }
 h3 {
-  font-size: 1.953em;
+  /* font-size: 1.953em; */
 }
 h4 {
-  font-size: 1.563em;
+  /* font-size: 1.563em; */
 }
 h5 {
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
 }
 strong,
 b {
