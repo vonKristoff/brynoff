@@ -18,6 +18,12 @@
     {/if}
   </div>
 </div>
+<video
+  controls
+  playsinline
+  preload="metadata"
+  src="https://brynoffee.s3.eu-west-2.amazonaws.com/videos/IMG_3255.mp4"
+></video>
 {#each VideoManager.ids as id}
   <div class="video absolute grid place-content-center">
     <video
