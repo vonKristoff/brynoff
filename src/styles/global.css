@@ -1,4 +1,6 @@
+@import "tailwindcss";
 @import "./tailwind-utils.css";
+@import "./fonts.css";
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -6,6 +8,7 @@
  */
 :root {
   --primary-green: forestgreen;
+  --color-secondary: #4f3866;
   --accent: #2337ff;
   --accent-dark: #000d8a;
   --black: 15, 18, 25;
@@ -16,19 +19,10 @@
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 }
-@font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+
+@theme {
+  --color-primary: var(--primary-green);
+  --color-secondary: var(--color-secondary);
 }
 
 body {
@@ -37,10 +31,8 @@ body {
   padding: 0;
   text-align: left;
   background: linear-gradient(var(--gray-gradient)) no-repeat;
-  /* background-size: 100% 600px; */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  /* color: rgb(var(--gray-dark)); */
   color: darkolivegreen;
   font-size: 20px;
   line-height: 1.7;
@@ -48,13 +40,14 @@ body {
 }
 #page {
   background-color: oldlace;
+  @apply text-secondary;
+  @apply font-primary;
 }
 main {
   width: 720px;
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 5em 1em;
-  /* margin-top: 5em; */
 }
 h1,
 h2,
@@ -62,15 +55,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 0.5rem 0;
-  /* color: rgb(var(--black)); */
+  @apply font-primary;
+  margin: 0;
   line-height: 1.2;
 }
 h1 {
-  font-size: 3.052em;
+  /* font-size: 3.052em; */
 }
 h2 {
-  font-size: 2.441em;
+  /* font-size: 2.441em; */
 }
 h3 {
   font-size: 1.953em;

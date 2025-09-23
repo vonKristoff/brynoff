@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --font-radley: "Radley", sans-serif;
+  --font-young: "Young Serif", sans-serif;
+  --font-atkinson: "Atkinson", sans-serif;
+  --font-caudex: "Caudex", sans-serif;
+  --font-medieval: "MedievalSharp", sans-serif;
+}
+
+@theme {
+  --font-primary: var(--font-caudex);
+  --font-secondary: var(--font-young);
+  /* --font-tertiary: var(--font-young);
+  --font-page: var(--font-radley); */
+}
+
+@font-face {
+  font-family: "Radley";
+  src: url("/fonts/Radley/Radley-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Radley";
+  src: url("/fonts/Radley/Radley-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url("/fonts/Young_Serif/YoungSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Caudex";
+  src: url("/fonts/Caudex/Caudex-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Caudex";
+  src: url("/fonts/Caudex/Caudex-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Caudex";
+  src: url("/fonts/Caudex/Caudex-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MedievalSharp";
+  src: url("/fonts/MedievalSharp/MedievalSharp-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson";
+  src: url("/fonts/atkinson-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

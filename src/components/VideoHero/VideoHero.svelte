@@ -12,7 +12,7 @@
   class="absolute z-10 grid h-screen w-screen place-content-center font-serif"
 >
   <div class="flex flex-col justify-center items-center px-8 wrap-anywhere">
-    <div class="text-white text-6xl md:text-8xl">{title}</div>
+    <h1 class="text-white text-6xl md:text-8xl">{title}</h1>
     {#if children}
       {@render children()}
     {/if}
@@ -42,7 +42,7 @@
     transition: all 2s;
   }
   video {
-    width: 100%;
+    width: 100vw;
     height: 100dvh;
     object-fit: cover;
   }

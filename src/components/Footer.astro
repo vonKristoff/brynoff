@@ -1,14 +1,13 @@
 ---
 import Icon from "./Icon.astro";
 const today = new Date();
+import { SITE_TITLE } from "$lib/consts";
 ---
 
 <footer>
-  <div class="flex justify-between items-center">
+  <div class="flex justify-between items-center font-secondary">
     <Icon src="shapes" ctx="shroom-6" size="5" />
-    <span
-      >&copy; {today.getFullYear()} Brynoffee coffee. All rights reserved.</span
-    >
+    <span>&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</span>
     <Icon src="shapes" ctx="shroom-1" size="5" />
   </div>
 </footer>

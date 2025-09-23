@@ -11,13 +11,15 @@ import Icon from "./Icon.astro";
     if (detail > 0.05) $header?.classList.add("satuation-filter");
   });
 </script>
-<header class="satuation-filter">
+<header class="satuation-filter font-tertiary">
   <nav>
-    <h2 class="flex flex-row items-center">
+    <div class="flex flex-row items-center font-secondary">
       <Icon ctx="shroom-2" size="3" src="shapes" colour="forestgreen" />
       <a href="/">{SITE_TITLE}</a>
-    </h2>
-    <div class="gap-8 items-center internal-links text-start hidden md:flex">
+    </div>
+    <div
+      class="gap-8 justify-center items-center internal-links text-start hidden md:flex font-primary"
+    >
       <HeaderLink href="/a">Retreats</HeaderLink>
       <!-- <Icon ctx="compass" size="1" /> -->
       <HeaderLink href="/b">Your stay</HeaderLink>
@@ -28,7 +30,7 @@ import Icon from "./Icon.astro";
       <!-- <Icon ctx="compass" size="1" /> -->
       <HeaderLink href="/e">Getting here</HeaderLink>
     </div>
-    <div class="">
+    <div class="flex justify-end">
       <Icon ctx="map" colour="forestgreen" />
     </div>
   </nav>
@@ -36,18 +38,15 @@ import Icon from "./Icon.astro";
 <style>
   header {
     position: fixed;
-    font-family: serif;
     width: 100dvw;
     overflow-x: hidden;
     top: 0;
     margin: 0;
     padding: 0 1em;
-    /* background-color: rgba(237, 237, 237, 0.828); */
     background-color: white;
     backdrop-filter: blur(0.5em);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     z-index: 101;
-    /* border-bottom: 0.125em solid var(--primary-green); */
     transition:
       filter,
       background-color 1s;
@@ -67,9 +66,10 @@ import Icon from "./Icon.astro";
     text-decoration: none;
   }
   nav {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-between;
+    grid-template-columns: 1fr 2fr 1fr;
   }
   nav a {
     /* padding: 1em 0.5em; */
