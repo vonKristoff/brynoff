@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/MarkdownPage.astro";
+const slug = Astro.url.pathname.split("/").at(-1);
+---
+
+<Layout {slug}>
+  <div class="content-grid gap-y-8">
+    <p class="font-secondary breakout">
+      When you book the Valley of the Cool Trees you get exclusive access to the
+      whole site. Camping is restricted to one field, but you are free to
+      explore the rest of the land - wild flower meadows, wild woods, and wild
+      water. As you explore… love tree, swing, plunge pool, horse….
+    </p>
+  </div>
+</Layout>
