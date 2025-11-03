@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .content-grid {
+    display: grid;
+    grid-template-columns:
+      [full-start] 2fr
+      [breakout-start] 1fr
+      [content-start] minmax(0, 65ch) [content-end]
+      1fr [breakout-end]
+      2fr [full-end];
+  }
+  .content-grid > * {
+    grid-column: content;
+  }
+  .breakout {
+    grid-column: breakout;
+    @apply py-12;
+  }
+  .full-width {
+    grid-column: full;
+  }
+}

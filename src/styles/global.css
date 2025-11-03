@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background-color: rgb(201, 216, 191);
+  background-color: rgb(234 252 221);
   /* background: linear-gradient(var(--gray-gradient)) no-repeat; */
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -44,32 +44,34 @@ body {
   @apply text-secondary;
   @apply font-primary;
 }
-main {
-  width: 720px;
-  max-width: calc(100% - 2em);
-  margin: auto;
-  padding: 5em 1em;
-}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply font-primary;
   margin: 0;
   line-height: 1.2;
 }
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
 h1 {
   /* font-size: 3.052em; */
+  /* @apply text-4xl; */
 }
 h2 {
   /* font-size: 2.441em; */
+  /* @apply text-5xl; */
 }
 h3 {
-  /* font-size: 1.953em; */
+  @apply text-3xl;
 }
 h4 {
+  @apply text-2xl;
   /* font-size: 1.563em; */
 }
 h5 {

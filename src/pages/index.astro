@@ -19,8 +19,9 @@ import ids from "$lib/manifest.json";
     <Intersect client:load>
       <div class="hero h-[100dvh]">
         <VideoHero title={SITE_TITLE} ids={ids} client:load>
-          <h4 class="text-white text-xl md:text-3xl">
-            A place {` `}<span class="italic"
+          <h2 class="text-emerald-100 text-xl md:text-3xl font-primary">
+            we have the medicine for what ails you
+            <!-- A place {` `}<span class="italic"
               ><TypeWriter
                 afterTyped={{ wait: 5000 }}
                 endState={{ caret: "hidden" }}
@@ -32,31 +33,40 @@ import ids from "$lib/manifest.json";
                 ]}
                 client:load
               /></span
-            >
-          </h4>
+            > -->
+          </h2>
         </VideoHero>
       </div>
     </Intersect>
     <div id="page">
-      <main class="flex flex-col gap-12">
-        <div class="flex justify-center">
+      <main class="flex flex-col gap-12 py-18">
+        <!-- <div class="flex justify-center">
           <Icon src="shapes" ctx="shroom-3" size="5" />
-        </div>
-        <section>
-          <p class="font-secondary">
+        </div> -->
+        <section class="content-grid">
+          <h3 class="font-secondary text-3xl breakout">
             Tucked away deep in the forests of the South Wales mountains,
             Cwmcoedoeron is magical place full of wild flowers, wild woods, and
             wild water.
-          </p>
+          </h3>
           <p class="">
             We cater for groups of up to 50 people with facilities including
             indoor and outdoor kitchens, a 50 foot partytunnel, hot shower,
             compost toilets, fire pits, and hammocks.
           </p>
+          <p class="">
+            We have a vision of creating a space and community for people to
+            connect to their wilder selves, to heal, grow and transform, to
+            imagine and build a better world.
+          </p>
+          <p>
+            Completely off-grid, we are working towards meeting all of our needs
+            from the land…..
+          </p>
         </section>
-        <div class="flex justify-center">
+        <!-- <div class="flex justify-center">
           <Icon src="shapes" ctx="shroom-5" size="5" />
-        </div>
+        </div> -->
       </main>
     </div>
     <Footer />
