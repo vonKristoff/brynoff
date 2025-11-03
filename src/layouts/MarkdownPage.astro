@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/StandardPage.astro";
+import { type CollectionEntry, getEntry, render } from "astro:content";
+
+const { slug } = Astro.props;
+const post = await getEntry("pages", slug);
+if (!post) throw new Error(`Page not found: ${slug}`);
+const { Content } = await render(post);
+---
+
+<Layout
+  title={post!.data.title}
+  description={post!.data.description}
+  pubDate={post!.data.pubDate}
+  heroImage={post.data.heroImage}
+>
+  <slot />
+  <div class="content-grid gap-y-8">
+    <Content />
+  </div>
+</Layout>
