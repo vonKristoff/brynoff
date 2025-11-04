@@ -24,4 +24,4 @@ pnpm-debug.log*
 scripts
 icons
 public/video
-src/assets
+# src/assets

@@ -4,11 +4,9 @@
   .content-grid {
     display: grid;
     grid-template-columns:
-      [full-start] 2fr
-      [breakout-start] 1fr
+      [full-start] 2fr [breakout-start] 1fr
       [content-start] minmax(0, 65ch) [content-end]
-      1fr [breakout-end]
-      2fr [full-end];
+      1fr [breakout-end] 2fr [full-end];
   }
   .content-grid > * {
     grid-column: content;
