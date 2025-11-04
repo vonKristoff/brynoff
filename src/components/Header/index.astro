@@ -1,7 +1,8 @@
 ---
-import { SITE_TITLE } from "../consts";
-import HeaderLink from "./HeaderLink.astro";
-import Icon from "./Icon.astro";
+import { SITE_TITLE } from "$lib/consts";
+import NavLinks from "./NavLinks.astro";
+import Icon from "../Icon.astro";
+import Dialog from "./Dialog.astro";
 ---
 
 <script>
@@ -20,21 +21,21 @@ import Icon from "./Icon.astro";
     <div
       class="gap-8 justify-center items-center internal-links text-start hidden md:flex font-primary"
     >
-      <HeaderLink href="/about">About</HeaderLink>
-      <!-- <Icon ctx="compass" size="1" /> -->
-      <HeaderLink href="/camping">Group camping</HeaderLink>
-      <!-- <Icon ctx="compass" size="1" /> -->
-      <HeaderLink href="/events">Events and Retreats</HeaderLink>
-      <!-- <Icon ctx="compass" size="1" /> -->
-      <HeaderLink href="/activities">Activities</HeaderLink>
-      <!-- <Icon ctx="compass" size="1" /> -->
-      <HeaderLink href="/volunteering">Volunteering</HeaderLink>
+      <NavLinks />
     </div>
     <div class="flex justify-end">
-      <Icon ctx="map" colour="forestgreen" />
+      <button id="toggleNavigation" aria-label="mobile-naviagtion">
+        <Icon ctx="map" colour="forestgreen" />
+      </button>
     </div>
   </nav>
 </header>
+<Dialog id="navigation" />
+<script>
+  document.getElementById("toggleNavigation").addEventListener("click", () => {
+    document.dispatchEvent(new CustomEvent("toggle-navigation"));
+  });
+</script>
 <style>
   header {
     position: fixed;
@@ -79,32 +80,6 @@ import Icon from "./Icon.astro";
   @media (min-width: 1080px) {
     nav {
       grid-template-columns: 1fr 2fr 1fr;
-    }
-  }
-  nav a {
-    /* padding: 1em 0.5em; */
-    color: darkgreen;
-    border-bottom: 0.125em solid transparent;
-    text-decoration: none;
-    /* font-family: "Atkinson", sans-serif; */
-    font-size: smaller;
-    transition: all 0.4s;
-    line-height: 1.5em;
-  }
-  nav a:hover {
-    color: var(--accent);
-    border-bottom: 0.125em solid var(--accent);
-  }
-  nav a.active {
-    /* text-decoration: none; */
-  }
-  .social-links,
-  .social-links a {
-    display: flex;
-  }
-  @media (max-width: 720px) {
-    .social-links {
-      display: none;
     }
   }
 </style>

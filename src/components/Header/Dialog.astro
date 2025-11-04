@@ -1,0 +1,62 @@
+---
+import NavLinks from "./NavLinks.astro";
+import Icon from "../Icon.astro";
+const { id } = Astro.props;
+---
+
+<dialog id={`modal-${id}`} class="shadow-xl">
+  <div class="modal">
+    <button class="flex justify-end">
+      <Icon ctx="x" />
+    </button>
+    <nav class="grid place-content-center">
+      <div class="flex flex-col gap-8 items-center text-2xl">
+        <NavLinks color="olive" />
+      </div>
+    </nav>
+    <div class="flex justify-center">
+      <Icon src="shapes" ctx="shroom-3" size="5" />
+    </div>
+  </div>
+</dialog>
+<script define:vars={{ id }}>
+  const modal = document.getElementById(`modal-${id}`);
+  const close = modal?.querySelector("button");
+  close?.addEventListener("click", () => modal.close());
+  document.addEventListener(`toggle-${id}`, () =>
+    modal?.attributes.open ? modal.close() : modal.showModal()
+  );
+</script>
+<style>
+  dialog {
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 90dvh;
+    position: fixed;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+  }
+  nav {
+    height: inherit;
+  }
+  .modal {
+    padding: 28px;
+    height: inherit;
+  }
+
+  .modal {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: oldlace;
+    a {
+      color: darkolivegreen;
+    }
+  }
+
+  dialog::backdrop {
+    opacity: 0.75;
+    background-color: #e5daf8;
+  }
+</style>

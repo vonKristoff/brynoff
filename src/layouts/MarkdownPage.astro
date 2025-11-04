@@ -3,7 +3,7 @@ import Layout from "../layouts/StandardPage.astro";
 import { type CollectionEntry, getEntry, render } from "astro:content";
 
 const { slug } = Astro.props;
-console.log("", slug);
+
 const post = await getEntry("pages", slug);
 if (!post) throw new Error(`Page not found: ${slug}`);
 const { Content } = await render(post);

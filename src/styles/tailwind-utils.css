@@ -19,3 +19,21 @@
     grid-column: full;
   }
 }
+
+@layer base {
+  a {
+    color: darkgreen;
+    border-bottom: 0.125em solid transparent;
+    text-decoration: none;
+    font-size: smaller;
+    transition: all 0.4s;
+    line-height: 1.5em;
+  }
+  a.active {
+    border-bottom: 0.125em solid var(--accent);
+  }
+  a:hover {
+    color: var(--accent);
+    border-bottom: 0.125em solid var(--accent);
+  }
+}
