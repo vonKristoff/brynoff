@@ -1,0 +1,16 @@
+---
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import Layout from "../layouts/MarkdownPage.astro";
+// yuo do this because it is statically generated
+export async function getStaticPaths() {
+  const posts = await getCollection("pages");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+
+const props = Astro.props;
+---
+
+<Layout slug={props.id} />
