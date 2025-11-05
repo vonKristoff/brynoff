@@ -7,3 +7,5 @@ export const SITE_DESCRIPTION =
 export const S3 = import.meta.env.PROD
   ? "https://brynoffee.s3.eu-west-2.amazonaws.com/videos"
   : "/video";
+// local prefix /public/videos/IMG_XXXX
+export const VIDEO_PREFIX = "IMG_";

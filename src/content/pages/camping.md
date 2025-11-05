@@ -2,7 +2,7 @@
 title: "Group Camping"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
-heroImage: "$lib/assets/camp-fire.jpg"
+heroImage: "$lib/assets/camping-field.jpg"
 ---
 
 We cater for groups of up to 50 people with facilities including indoor and outdoor kitchens, a 50 foot partytunnel, hot shower, compost toilets, fire pits, and hammocks.
