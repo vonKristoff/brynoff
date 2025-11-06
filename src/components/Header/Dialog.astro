@@ -6,16 +6,21 @@ const { id } = Astro.props;
 
 <dialog id={`modal-${id}`} class="shadow-xl">
   <div class="modal">
-    <button class="flex justify-end">
-      <Icon ctx="x" />
-    </button>
-    <nav class="grid place-content-center">
-      <div class="flex flex-col gap-8 items-center text-2xl">
-        <NavLinks color="olive" />
+    <div class="flex justify-end">
+      <button class="p-2 text-3xl">
+        <Icon ctx="x" />
+      </button>
+    </div>
+    <h2 class="font-secondary text-3xl text-center">Farmacy menu</h2>
+    <nav class="grid place-content-center font-primary">
+      <div class="flex flex-col gap-8 items-center text-3xl navlist">
+        <NavLinks />
       </div>
     </nav>
     <div class="flex justify-center">
       <Icon src="shapes" ctx="shroom-3" size="5" />
+      <Icon src="shapes" ctx="shroom-1" size="5" />
+      <Icon src="shapes" ctx="shroom-4" size="5" />
     </div>
   </div>
 </dialog>
@@ -24,10 +29,13 @@ const { id } = Astro.props;
   const close = modal?.querySelector("button");
   close?.addEventListener("click", () => modal.close());
   document.addEventListener(`toggle-${id}`, () =>
-    modal?.attributes.open ? modal.close() : modal.showModal()
+    modal?.attributes?.open ? modal.close() : modal.showModal()
   );
 </script>
 <style>
+  .navlist {
+    --anchor-accent: var(--accent-secondary);
+  }
   dialog {
     top: 50%;
     left: 50%;
@@ -41,7 +49,7 @@ const { id } = Astro.props;
     height: inherit;
   }
   .modal {
-    padding: 28px;
+    padding: 2em;
     height: inherit;
   }
 
@@ -50,13 +58,10 @@ const { id } = Astro.props;
     display: flex;
     flex-direction: column;
     background-color: oldlace;
-    a {
-      color: darkolivegreen;
-    }
   }
 
   dialog::backdrop {
-    opacity: 0.75;
-    background-color: #e5daf8;
+    background-color: #e5daf8a6;
+    backdrop-filter: blur(0.5em);
   }
 </style>

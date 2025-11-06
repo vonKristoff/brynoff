@@ -44,18 +44,18 @@
 {/if}
 
 <style>
-  #title {
+  /* #title {
     transition: color 1s;
-  }
+  } */
   :global(.video-loaded #title) {
     color: white;
   }
   .video {
     position: relative;
-    transition: all 2s;
+    /* transition: all 2s; */
   }
   video {
-    transition: all 2s;
+    transition: opacity 2s;
     position: absolute;
     width: 100vw;
     height: 100dvh;
@@ -70,7 +70,7 @@
     z-index: 0;
   }
   :global(video[data-status="READY"]) {
-    opacity: 0;
+    opacity: 1;
     z-index: 0;
   }
   :global(video[data-status="PLAYING"]) {

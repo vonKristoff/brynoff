@@ -20,17 +20,18 @@
   }
 }
 
-@layer base {
+@layer utilities {
   a {
-    color: darkgreen;
+    color: var(--anchor-accent, inherit);
     border-bottom: 0.125em solid transparent;
     text-decoration: none;
     font-size: smaller;
     transition: all 0.4s;
-    line-height: 1.5em;
+    line-height: 1.25em;
   }
   a.active {
-    border-bottom: 0.125em solid var(--accent);
+    border-bottom: 0.125em solid var(--accent-dark);
+    color: var(--accent-dark);
   }
   a:hover {
     color: var(--accent);
