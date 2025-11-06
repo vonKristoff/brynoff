@@ -4,7 +4,7 @@ import Icon from "../Icon.astro";
 const { id } = Astro.props;
 ---
 
-<dialog id={`modal-${id}`} class="shadow-xl">
+<dialog id={`modal-${id}`} class="shadow-xl rounded-2xl fixed">
   <div class="modal">
     <div class="flex justify-end">
       <button class="p-2 text-3xl">
@@ -37,14 +37,21 @@ const { id } = Astro.props;
     --anchor-accent: var(--accent-secondary);
   }
   dialog {
+    opacity: 1;
     top: 50%;
     left: 50%;
     width: 90vw;
     height: 90dvh;
-    position: fixed;
-    border-radius: 10px;
+    transition: all 0.4s;
     transform: translate(-50%, -50%);
   }
+  @starting-style {
+    dialog[open] {
+      opacity: 0;
+      transform: translate(-50%, -25%);
+    }
+  }
+
   nav {
     height: inherit;
   }
