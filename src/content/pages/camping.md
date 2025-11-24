@@ -5,40 +5,49 @@ pubDate: "Jul 08 2022"
 heroImage: "$lib/assets/camping-field.jpg"
 ---
 
-We cater for groups of up to 50 people with facilities including indoor and outdoor kitchens, a 50 foot partytunnel, hot shower, compost toilets, fire pits, and hammocks.
+When you book the Valley of the Cool Trees you get exclusive access to the whole site. That means you can make as much noise as you like, stay up as late as you like, and sleep as long as you like, knowing you won’t be disturbing anyone else and won’t be disturbed by anyone else.
 
-Access is via stone and grass tracks, with parking available elsewhere if the field is too muddy for your vehicle.
+photos of the whole site from the ridge
 
-Given our location, we are perfect for groups who value nature, privacy and freedom.
+Camping is a 1.5 acre wildflower meadow with stunning views of the valley. There’s plenty of space for lots of tent pitches, camper vans and caravans.
 
-As well as space for tents and campervans/caravans, we also have some caravans that you are welcome to hire at a small additional cost. We also offer other services such as catering and fire tending should this be desired.
+photos of the campsite from the ridge
 
-### The field
 
-The campsite is a 1.5 acres wildflower meadow with stunning views of the valley. There’s plenty of space for tent pitches, as well as camper vans and caravans
-
-### Compost toilets and urinals
-
-There are two compost toilets in the field, one men’s and one women’s urinal
-
-### Flower shower
-
-Enjoy a hot shower whilst smelling the roses :)
 
 ### Cooking facilities
 
-We have two fully fitted and equipped kitchens - one outdoors under shelter and one indoors - both large enough to cater for big groups. Facilities inlcude, fridges, freezer, catering equipment, generous washing up stations, four x gas stoves.
+We have two fully fitted and equipped kitchens - one outdoors under shelter and one indoors in a polytunnel - both large enough to cater for big groups. Facilities include, fridges, freezer, catering equipment, generous washing up stations, gas stoves.
+
+Photos
+
+
 
 ### The Partytunnel
 
-And just in case the weather is not fully compliant, the campsite also has a 50 foot polytunnel, which can be adapted to whatever use you want to make of it. We also have ???W speakers and a cinema projector available for hire.
+And just in case the weather is not fully compliant, the campsite also has a 50 foot polytunnel, which can be adapted to whatever use you want to make of it. We have speakers and a cinema projector if you want to have a party or a film night.
+
+Photos
+
+
+
+### Compost toilets 
+
+There are two compost toilets in the field, one men’s and one women’s urinal
+
+
+
+### Flower shower
+
+Enjoy a hot shower whilst smelling the roses :) 
+
+Photo
+
+
 
 ### Off-grid
 
-The whole farm is completely off-grid, meaning we generate our own electricity (solar panels) and harvest and process our own water. For the campsite, we harvest rain water and run it through extensive filtering to ensure that when you come here you’re probably drinking the purest water you’ve ever had. (too much?)
+The whole farm is completely off-grid, meaning we generate our own electricity from solar panels and filter water from our spring.
 
-### Additional offers
 
-- Tours: We’d be more than happy to show you round the land, show you our favourite spots, what edible and medicinals are in season…
-- Food: In the productive months, we will have home-grown organic (not certified) food for sale. We also have a fantastic farm shop nearby so can organise all your fresh produce (veg, meat, eggs etc) if you like. And if you would like us to cater your whole event, we can do so for a fee (call to discuss further).
-- Super deluxe stay: we can provide additional services such as daily cleaning of kitchens and toilets, fire keeper etc etc
+
