@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = "Cwmcoedoeron Farmacy";
 export const SITE_DESCRIPTION =
-  "A little corner of paradise, deep in the forest, far away from civilisation. Come rewild yourself…";
+  "A little corner of paradise, deep in the forest, far away from civilisation";
 export const S3 = import.meta.env.PROD
   ? "https://brynoffee.s3.eu-west-2.amazonaws.com/videos"
   : "/video";
