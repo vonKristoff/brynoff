@@ -5,6 +5,8 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header/index.astro";
 import TypeWriter from "../components/TypeWriter.svelte";
 import Intersect from "$lib/components/Intersect.svelte";
+import Banner from "$lib/components/Banner.astro";
+import volunteerImage from "$lib/assets/jago-campfire.jpeg";
 import Icon from "$lib/components/Icon.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import ids from "$lib/manifest.json";
@@ -49,6 +51,20 @@ import ids from "$lib/manifest.json";
             Cwmcoedoeron is magical place full of wild flowers, wild woods, and
             wild water.
           </h3>
+          <div class="flex flex-col gap-8 mb-12 breakout">
+            <Banner
+              img="camping-field.jpg"
+              title="JOIN US"
+              sub="find out more, and how you can develop your individual path"
+              url="volunteering"
+            />
+            <Banner
+              img={volunteerImage}
+              title="JOIN US"
+              sub="find out more, and how you can develop your individual path"
+              url="volunteering"
+            />
+          </div>
           <p class="">
             We cater for groups of up to 50 people with facilities including
             indoor and outdoor kitchens, a 50 foot partytunnel, hot shower,
