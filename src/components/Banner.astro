@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+// <Banner img={imagefile} url="volunteer" title="JOIN US!" sub="A short descriptor" />
+const { img, url, title, sub } = Astro.props;
+---
+
+<a href={url} class="banner relative group rounded-lg overflow-clip">
+  {
+    typeof img === "string" ? (
+      <img src={`images/${img}`} alt={title} class="object-cover" />
+    ) : (
+      <Image src={img} alt={title} class="object-cover" />
+    )
+  }
+  <div
+    class="absolute w-auto h-auto inset-0 group-hover:bg-highlight mix-blend-lighten"
+  >
+  </div>
+  <!-- <div class="backdrop-blur-xs absolute w-auto h-auto inset-0 rounded-lg"></div> -->
+  <div class="absolute inset-0 text-center grid place-content-center">
+    <div
+      class="flex backdrop-blur-xs gap-4 drop-shadow-4xl flex-col p-8 rounded-lg"
+    >
+      <h3 class="underline">{title}</h3>
+      {sub && <p>{sub}</p>}
+    </div>
+  </div>
+</a>
+
+<style>
+  a.banner {
+    border: none;
+    &:hover {
+      /* background-color: var(--highlight); */
+      img {
+        opacity: 0.85;
+      }
+      h3,
+      p {
+        color: var(--color-secondary);
+      }
+    }
+    h3,
+    p {
+      color: var(--color-grass);
+    }
+  }
+  .banner img {
+    max-height: 35dvh;
+    transition: all 0.3s;
+  }
+</style>
