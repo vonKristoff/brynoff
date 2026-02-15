@@ -7,6 +7,6 @@ heroImage: "$lib/assets/camp-fire.jpg"
 
 We have wildflower meadows, a stream (with a little plunge pool) and ancient woods for you to explore. On a sunny day, you won’t want to be anywhere else.
 
-There are also great walks in the surrounding forest which includes remnants of the Celtic Ranforests that once covered all of this land.
+There are also great walks and trails for hiking, mountain biking and horse-riding in the surrounding forest which includes remnants of the Celtic Rainforests that once covered all of this land.
 
-Slightly further afield are the peaks and waterfalls of the Bannau Brycheiniog and oak forests and rivers of the Cambrian mountains. We’d be happy to provide you with advice on our favourite walks, swim spots, local pubs etc.
+Slightly further afield are the peaks and waterfalls of the Bannau Brycheiniog (Brecon Beacons) and oak forests and rivers of the Cambrian mountains. We’d be happy to provide you with advice on our favourite family activities, walks, swim spots, local pubs etc.
