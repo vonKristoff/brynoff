@@ -2,7 +2,7 @@
 title: "Activities"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 08 2022"
-heroImage: "$lib/assets/camp-fire.jpg"
+heroImage: "$lib/assets/people-walking-forest.jpg"
 ---
 
 We have wildflower meadows, a stream (with a little plunge pool) and ancient woods for you to explore. On a sunny day, you won’t want to be anywhere else.
