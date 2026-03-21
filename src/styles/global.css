@@ -47,7 +47,7 @@ h1 {
   /* @apply text-4xl; */
 }
 h2 {
-  /* font-size: 2.441em; */
+  font-size: 2.441em;
   /* @apply text-5xl; */
 }
 h3 {
@@ -82,8 +82,9 @@ table {
   width: 100%;
 }
 img {
+  object-fit: cover;
   width: 100%;
-  max-height: 75dvh;
+  max-height: 60vh;
   height: auto;
   border-radius: 8px;
   @apply shadow-xl;

@@ -52,10 +52,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <Header />
     <main>
       <article>
-        <div class="hero-image">
+        <div class="hero-image relative">
           {heroImage && <Image src={heroImage} alt="" />}
         </div>
         <div id="page" class="font-primary py-18 text-secondary">
+          <header class="content-grid">
+            <div class="mb-16 font-secondary font-bold">
+              <h1 class="text-4xl text-teal-700">
+                {title}
+              </h1>
+            </div>
+          </header>
           <!-- <div class="title">
 						<div class="date">
 							<FormattedDate date={pubDate} />
