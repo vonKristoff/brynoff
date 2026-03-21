@@ -18,10 +18,10 @@ const { img, url, title, sub } = Astro.props;
   </div>
   <!-- <div class="backdrop-blur-xs absolute w-auto h-auto inset-0 rounded-lg"></div> -->
   <div class="absolute inset-0 text-center grid place-content-center">
-    <div
-      class="flex backdrop-blur-xs gap-4 drop-shadow-4xl flex-col p-8 rounded-lg"
-    >
-      <h3 class="underline">{title}</h3>
+    <div class="flex gap-4 flex-col p-8 rounded-lg">
+      <h2 class="text-5xl text-white text-shadow-xs uppercase font-secondary">
+        {title}
+      </h2>
       {sub && <p>{sub}</p>}
     </div>
   </div>
@@ -40,7 +40,6 @@ const { img, url, title, sub } = Astro.props;
         color: var(--color-secondary);
       }
     }
-    h3,
     p {
       color: var(--color-grass);
     }
