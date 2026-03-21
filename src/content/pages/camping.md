@@ -7,7 +7,7 @@ heroImage: "$lib/assets/camping-field.jpg"
 
 ### Exclusive access
 
-When you book the Valley of the Cool Trees you get exclusive access to the whole site. That means you can make as much noise as you like, stay up as late as you like, and sleep as long as you like, knowing you won’t be disturbing anyone else and won’t be disturbed by anyone else.
+When you book Valley of the Cool Trees you get exclusive access to the whole site. That means you can make as much noise as you like, stay up as late as you like, and sleep as long as you like, knowing you won’t be disturbing anyone else and won’t be disturbed by anyone else.
 
 
 ### Your own private wildflower meadow
