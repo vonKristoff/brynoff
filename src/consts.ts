@@ -1,7 +1,8 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = "Cwmcoedoeron Farmacy";
+export const SUB_TITLE = "Cwmcoedoeron Farmacy";
+export const SITE_TITLE = "Valley of the Cool Trees";
 export const SITE_DESCRIPTION =
   "A little corner of paradise, deep in the forest, far away from civilisation";
 export const S3 = import.meta.env.PROD

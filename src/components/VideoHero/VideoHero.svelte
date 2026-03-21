@@ -2,7 +2,7 @@
   import videoStream from "./videoStreamAction.svelte";
   import VideoManager from "./VideoManager.svelte";
   import { onMount } from "svelte";
-  let { title, ids, children, icon } = $props();
+  let { title, subheading, ids, children, icon } = $props();
   onMount(() => VideoManager.init(ids));
 </script>
 
@@ -10,8 +10,13 @@
   class="absolute z-10 grid h-screen w-screen place-content-center font-serif"
 >
   <div
-    class="flex flex-col justify-center items-center px-8 wrap-anywhere gap-8"
+    class="flex flex-col justify-center items-center px-8 wrap-anywhere gap-4"
   >
+    {#if subheading}
+      <span class="text-white text-2xl text-right self-end font-light"
+        >{subheading}</span
+      >
+    {/if}
     <h1 id="title" class="text-white text-4xl md:text-8xl">
       {title}
       {#if icon}
