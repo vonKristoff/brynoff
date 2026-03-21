@@ -17,13 +17,10 @@ Camping is in a 1.5 acre wildflower meadow with stunning views of the valley in 
 
 We’ve got camp cooking covered:
 
-Outdoor kitchen to help you make the most of sunny days.
-
-Indoor kitchen so you can keep the food coming whatever the weather.
-
-Fully equiped with fridges, freezer, gas stoves, catering gear, and the king of washing-up stations.
-
-Campfire cooking - we can also provide equipment to cook on the campfire, whether it’s a full on barbecue or just toasted marshmallows.
+- Outdoor kitchen to help you make the most of sunny days.
+- Indoor kitchen so you can keep the food coming whatever the weather.
+- Fully equiped with fridges, freezer, gas stoves, catering gear, and the king of washing-up stations.
+- Campfire cooking - we can also provide equipment to cook on the campfire, whether it’s a full on barbecue or just toasted marshmallows.
 
 ### The Partytunnel
 

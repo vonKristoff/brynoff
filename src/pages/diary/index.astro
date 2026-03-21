@@ -10,7 +10,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "$lib/consts";
 const t = await getCollection("diary");
 console.log(t);
 const posts = (await getCollection("diary")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 

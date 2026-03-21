@@ -120,6 +120,15 @@ hr {
   }
 }
 
+li {
+  list-style: disc;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+p:has(+ ul) {
+  margin: 0;
+}
+
 .sr-only {
   border: 0;
   padding: 0;
