@@ -8,7 +8,7 @@ import Intersect from "$lib/components/Intersect.svelte";
 import Banner from "$lib/components/Banner.astro";
 import volunteerImage from "$lib/assets/jago-campfire.jpeg";
 import Icon from "$lib/components/Icon.astro";
-import { SITE_DESCRIPTION, SITE_TITLE, SUB_TITLE } from "../consts";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import ids from "$lib/manifest.json";
 ---
 
@@ -20,12 +20,7 @@ import ids from "$lib/manifest.json";
     <Header />
     <Intersect client:load>
       <div class="hero h-[100dvh]">
-        <VideoHero
-          title={SITE_TITLE}
-          subheading={SUB_TITLE}
-          ids={ids}
-          client:load
-        >
+        <VideoHero title={SITE_TITLE} ids={ids} client:load>
           <h2 class="text-white text-xl md:text-4xl font-primary">
             <span class="italic"
               ><TypeWriter
