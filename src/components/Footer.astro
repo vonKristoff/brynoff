@@ -17,13 +17,30 @@ import { SITE_TITLE } from "$lib/consts";
         >&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</span
       >
     </div>
-    <div class="hidden md:flex">
+    <aside
+      class="p-4 hidden md:flex flex-col text-right text-text-200 text-sm justify-end text-wash-300"
+    >
+      <span>built with humans</span>
+      <a class="inline-link" href="https://threejjjs.xyz">
+        <h5
+          class="text-right py-1 text-text-200 text-xl md:text-3xl font-secondary m-0"
+        >
+          three<span class="text-emerald-700">jjj</span>s
+          <br />
+        </h5>
+      </a>
+      <span class="text-xs">Interactive Tech</span>
+    </aside>
+    <!-- <div class="hidden md:flex">
       <Icon src="shapes" ctx="shroom-1" size="5" />
       <Icon src="shapes" ctx="shroom-3" size="3" />
-    </div>
+    </div> -->
   </div>
 </footer>
 <style>
+  .inline-link:hover {
+    border-color: transparent;
+  }
   footer {
     padding: 2em 1em 6em 1em;
     /* background: linear-gradient(var(--gray-gradient)) no-repeat; */
