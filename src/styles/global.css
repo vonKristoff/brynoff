@@ -81,13 +81,15 @@ input {
 table {
   width: 100%;
 }
+#page img {
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
 img {
   object-fit: cover;
   width: 100%;
   max-height: 60vh;
   height: auto;
-  border-radius: 8px;
-  @apply shadow-xl;
 }
 code {
   padding: 2px 5px;
