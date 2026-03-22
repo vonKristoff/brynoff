@@ -6,9 +6,21 @@ import { SITE_TITLE } from "$lib/consts";
 
 <footer>
   <div class="flex justify-between items-center font-secondary">
-    <Icon src="shapes" ctx="shroom-6" size="5" />
-    <span>&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</span>
-    <Icon src="shapes" ctx="shroom-1" size="5" />
+    <div class="flex">
+      <Icon src="shapes" ctx="shroom-7" size="5" />
+      <Icon src="shapes" ctx="shroom-6" size="3" />
+      <Icon src="shapes" ctx="shroom-2" size="5" />
+    </div>
+    <div class="flex flex-col items-center">
+      <Icon ctx="coolrees-noir" size="5" nostroke />
+      <span
+        >&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</span
+      >
+    </div>
+    <div class="hidden md:flex">
+      <Icon src="shapes" ctx="shroom-1" size="5" />
+      <Icon src="shapes" ctx="shroom-3" size="3" />
+    </div>
   </div>
 </footer>
 <style>

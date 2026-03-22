@@ -7,6 +7,7 @@
 :root {
   --primary-green: forestgreen;
   --grass-green: #ecf29d;
+  --ice-green: #e6fde6;
   --secondary-green: darkolivegreen;
   --color-secondary: #4f3866;
   --accent: #2356ff;
@@ -28,7 +29,7 @@
 @theme {
   --color-primary: var(--secondary-green);
   --color-secondary: var(--color-secondary);
-  --color-grass: var(--grass-green);
+  --color-grass: var(--ice-green);
   --color-darklight: var(--darklight);
   --color-highlight: var(--highlight);
 }

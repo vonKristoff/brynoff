@@ -5,6 +5,7 @@ interface Props {
   weight?: string;
   colour?: string;
   src?: string;
+  nostroke?: string;
 }
 const {
   ctx,
@@ -12,6 +13,7 @@ const {
   size = "1",
   colour = "currentColor",
   src = "sprites",
+  nostroke,
 } = Astro.props;
 const href = `/${src}.svg#icon-${ctx}`;
 ---
@@ -20,7 +22,7 @@ const href = `/${src}.svg#icon-${ctx}`;
   width={`${size}em`}
   height={`${size}em`}
   fill="none"
-  stroke={colour}
+  stroke={nostroke ? "none" : colour}
   stroke-width={weight}
   stroke-linecap="round"
   stroke-linejoin="round"
