@@ -11,6 +11,7 @@ const { id } = Astro.props;
         <Icon ctx="x" />
       </button>
     </div>
+    <Icon ctx="coolrees-dawn" size="10" nostroke />
     <h2 class="font-secondary text-3xl text-center">Farmacy menu</h2>
     <nav class="grid place-content-center font-primary">
       <div class="flex flex-col gap-8 items-center text-3xl navlist">
@@ -18,9 +19,9 @@ const { id } = Astro.props;
       </div>
     </nav>
     <div class="flex justify-center">
-      <Icon src="shapes" ctx="shroom-3" size="5" />
-      <Icon src="shapes" ctx="shroom-1" size="5" />
       <Icon src="shapes" ctx="shroom-4" size="5" />
+      <Icon src="shapes" ctx="shroom-3" size="4" />
+      <Icon src="shapes" ctx="shroom-5" size="5" />
     </div>
   </div>
 </dialog>
@@ -29,7 +30,7 @@ const { id } = Astro.props;
   const close = modal?.querySelector("button");
   close?.addEventListener("click", () => modal.close());
   document.addEventListener(`toggle-${id}`, () =>
-    modal?.attributes?.open ? modal.close() : modal.showModal()
+    modal?.attributes?.open ? modal.close() : modal.showModal(),
   );
 </script>
 <style>
