@@ -21,7 +21,9 @@ import ids from "$lib/manifest.json";
     <Intersect client:load>
       <div class="hero h-[100dvh]">
         <VideoHero title={SITE_TITLE} ids={ids} client:load>
-          <h2 class="text-white text-xl md:text-4xl font-primary">
+          <h2
+            class="text-white text-xl md:text-4xl font-primary text-shadow-2xs"
+          >
             <span class="italic"
               ><TypeWriter
                 afterTyped={{ wait: 5000 }}

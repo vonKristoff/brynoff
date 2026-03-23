@@ -17,7 +17,10 @@
         >{subheading}</span
       >
     {/if}
-    <h1 id="title" class="text-white text-4xl md:text-8xl font-secondary">
+    <h1
+      id="title"
+      class="text-white text-4xl md:text-8xl font-secondary text-shadow-2xs"
+    >
       {title}
       {#if icon}
         {@render icon()}
