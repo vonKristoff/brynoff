@@ -1,0 +1,45 @@
+---
+import GalleryLayout from "$lib/layouts/GalleryPage.astro";
+import oats from "$lib/assets/cool-oats.svg";
+import { Image } from "astro:assets";
+const response = await fetch("https://api-cooltrees.cycocyan.xyz/files");
+const data = await response.json();
+const OPTIONS = "rs:fit:600:0";
+const FILE = "@webp";
+const PROXY = `http://coolcache.cycocyan.xyz/insecure/${OPTIONS}/plain/local:///cooltrees/gallery`;
+const images = data.filter((img) => !img.name.includes(".MOV"));
+---
+
+<GalleryLayout>
+  <section class="w-screen">
+    <div class="grid grid-cols-1 md:grid-cols-3 relative pb-72">
+      {
+        images.map(({ name, slug }) => (
+          <div class="aspect-square">
+            <img
+              class="w-full h-full object-cover"
+              src={`${PROXY}/${name}${FILE}`}
+              loading="lazy"
+              alt={`cooltrees-${slug}`}
+            />
+          </div>
+        ))
+      }
+      <div data-gallery-bg class="absolute bottom-0 right-0">
+        <Image src={oats} width={640} height={356} alt="oatis" />
+      </div>
+    </div>
+  </section>
+</GalleryLayout>
+
+<style>
+  [data-gallery-bg] {
+    z-index: -1;
+    opacity: 0.75;
+    width: 100%;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
