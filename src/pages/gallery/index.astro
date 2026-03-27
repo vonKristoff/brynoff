@@ -4,7 +4,7 @@ import oats from "$lib/assets/cool-oats.svg";
 import { Image } from "astro:assets";
 const response = await fetch("https://api-cooltrees.cycocyan.xyz/files");
 const data = await response.json();
-const OPTIONS = "rs:fit:600:0";
+const OPTIONS = "rs:fit:666:0";
 const FILE = "@webp";
 const PROXY = `http://coolcache.cycocyan.xyz/insecure/${OPTIONS}/plain/local:///cooltrees/gallery`;
 const images = data.filter((img) => !img.name.includes(".MOV"));
