@@ -16,12 +16,18 @@ const images = data.filter((img) => !img.name.includes(".MOV"));
       {
         images.map(({ name, slug }) => (
           <div class="aspect-square">
-            <img
-              class="w-full h-full object-cover"
-              src={`${PROXY}/${name}${FILE}`}
-              loading="lazy"
-              alt={`cooltrees-${slug}`}
-            />
+            <a
+              aria-label={slug}
+              href={`gallery/${slug}?file=${name.split(".")[1]}`}
+            >
+              <img
+                style={`view-transition-name: hero-image-${slug}`}
+                class="w-full h-full object-cover"
+                src={`${PROXY}/${name}${FILE}`}
+                loading="lazy"
+                alt={`cooltrees-${slug}`}
+              />
+            </a>
           </div>
         ))
       }
@@ -41,5 +47,8 @@ const images = data.filter((img) => !img.name.includes(".MOV"));
       width: 100%;
       max-width: 100%;
     }
+  }
+  @view-transition {
+    navigation: auto;
   }
 </style>

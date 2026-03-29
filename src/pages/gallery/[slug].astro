@@ -1,0 +1,20 @@
+---
+import GalleryLayout from "$lib/layouts/GalleryPage.astro";
+
+let { slug } = Astro.params;
+
+const end = Astro.url.searchParams.get("file");
+const OPTIONS = "rs:fit:1280:0";
+const FILE = "@webp";
+const PROXY = `http://coolcache.cycocyan.xyz/insecure/${OPTIONS}/plain/local:///cooltrees/gallery`;
+---
+
+<GalleryLayout>
+  <img
+    style={`view-transition-name: hero-image-${slug}`}
+    class="w-full h-full object-cover"
+    src={`${PROXY}/${slug}.${end}${FILE}`}
+    alt={`cooltrees-${slug}`}
+    lazy-loading
+  />
+</GalleryLayout>

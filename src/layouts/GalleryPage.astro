@@ -1,7 +1,7 @@
 ---
 import BaseHead from "$lib/components/BaseHead.astro";
 import Footer from "$lib/components/Footer.astro";
-
+import { ViewTransitions } from "astro:transitions";
 import Header from "$lib/components/Header/index.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "$lib/consts";
 ---
@@ -11,6 +11,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "$lib/consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
+      /* @view-transition {
+        navigation: auto;
+      } */
       main {
         width: 960px;
       }
@@ -82,9 +85,15 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "$lib/consts";
   </head>
   <body>
     <Header />
-    <main>
+    <main id="image-container">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
+<style>
+  #image-container {
+    width: 100vw;
+    height: 100dvh;
+  }
+</style>
