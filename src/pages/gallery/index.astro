@@ -11,41 +11,38 @@ const images = data.filter((img) => !img.name.includes(".MOV"));
 ---
 
 <GalleryLayout>
-  <section class="w-screen">
-    <div class="grid grid-cols-1 md:grid-cols-3 relative pb-72">
-      {
-        images.map(({ name, slug }) => (
-          <div class="aspect-square">
-            <a aria-label={slug} href={`gallery/${slug}`}>
-              <img
-                style={`view-transition-name: hero-image-${slug}`}
-                class="w-full h-full object-cover"
-                src={`${PROXY}/${name}${FILE}`}
-                loading="lazy"
-                alt={`cooltrees-${slug}`}
-              />
-            </a>
-          </div>
-        ))
-      }
-      <div data-gallery-bg class="absolute bottom-0 right-0">
-        <Image src={oats} width={640} height={356} alt="oatis" />
-      </div>
-    </div>
-  </section>
+    <section class="w-screen">
+        <div class="grid grid-cols-1 md:grid-cols-3 relative pb-72">
+            {
+                images.map(({ name, slug }) => (
+                    <div class="aspect-square">
+                        <a aria-label={slug} href={`gallery/${slug}`}>
+                            <img
+                                style={`view-transition-name: hero-image-${slug}`}
+                                class="w-full h-full object-cover"
+                                src={`${PROXY}/${name}${FILE}`}
+                                loading="lazy"
+                                alt={`cooltrees-${slug}`}
+                            />
+                        </a>
+                    </div>
+                ))
+            }
+            <div data-gallery-bg class="absolute bottom-0 right-0">
+                <Image src={oats} width={640} height={356} alt="oatis" />
+            </div>
+        </div>
+    </section>
 </GalleryLayout>
 
 <style>
-  [data-gallery-bg] {
-    z-index: -1;
-    opacity: 0.75;
-    width: 100%;
-    img {
-      width: 100%;
-      max-width: 100%;
+    [data-gallery-bg] {
+        z-index: -1;
+        opacity: 0.75;
+        width: 100%;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
     }
-  }
-  @view-transition {
-    navigation: auto;
-  }
 </style>
