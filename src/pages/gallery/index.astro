@@ -16,10 +16,7 @@ const images = data.filter((img) => !img.name.includes(".MOV"));
       {
         images.map(({ name, slug }) => (
           <div class="aspect-square">
-            <a
-              aria-label={slug}
-              href={`gallery/${slug}?file=${name.split(".")[1]}`}
-            >
+            <a aria-label={slug} href={`gallery/${slug}`}>
               <img
                 style={`view-transition-name: hero-image-${slug}`}
                 class="w-full h-full object-cover"

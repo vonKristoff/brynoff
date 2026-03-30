@@ -1,20 +1,29 @@
 ---
 import GalleryLayout from "$lib/layouts/GalleryPage.astro";
 
-let { slug } = Astro.params;
-
-const end = Astro.url.searchParams.get("file");
 const OPTIONS = "rs:fit:1280:0";
 const FILE = "@webp";
 const PROXY = `http://coolcache.cycocyan.xyz/insecure/${OPTIONS}/plain/local:///cooltrees/gallery`;
+
+export async function getStaticPaths() {
+  const response = await fetch("https://api-cooltrees.cycocyan.xyz/files");
+  const allImages = await response.json();
+  return allImages.map(({ name, slug }) => ({
+    params: { slug },
+    props: { name },
+  }));
+}
+
+let { slug } = Astro.params;
+let { name } = Astro.props;
 ---
 
 <GalleryLayout>
   <img
     style={`view-transition-name: hero-image-${slug}`}
     class="w-full h-full object-cover"
-    src={`${PROXY}/${slug}.${end}${FILE}`}
+    src={`${PROXY}/${name}${FILE}`}
     alt={`cooltrees-${slug}`}
-    lazy-loading
+    loading="lazy"
   />
 </GalleryLayout>
