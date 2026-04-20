@@ -1,0 +1,11 @@
+---
+let { name } = Astro.props;
+const OPTIONS = "rs:fit:1080:0";
+const FILE = "@webp";
+const PROXY = `http://coolcache.cycocyan.xyz/insecure/${OPTIONS}/plain/local:///cooltrees/gallery`;
+const src = `${PROXY}/${name}${FILE}`;
+---
+
+<div class="breakout">
+  <img src={src} alt="valley of the cooltrees" />
+</div>
