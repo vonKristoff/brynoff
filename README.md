@@ -12,3 +12,4 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
 ![how to insert inline image from gallery](src/assets/inline-image.jpg)
+SEE `/src/content/about.mdx` for example in file
