@@ -11,4 +11,4 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-![src/assets/inline-image.jpg]
+![how to insert inline image from gallery](src/assets/inline-image.jpg)
