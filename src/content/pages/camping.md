@@ -28,7 +28,7 @@ And just in case the weather is not fully compliant, the campsite also has a 50 
 
 ### Compost toilets
 
-We have five compost toilets in the field, including our legendary 'Poo with a View'.
+We have four compost toilets in the field, including our legendary 'Poo with a View'.
 
 ### Flower shower
 
