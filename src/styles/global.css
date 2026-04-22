@@ -90,6 +90,11 @@ table {
   width: 100%;
   max-height: 60vh;
   height: auto;
+  &.portrait {
+    place-self: center;
+    width: 40ch;
+    max-height: 70vh;
+  }
 }
 code {
   padding: 2px 5px;
