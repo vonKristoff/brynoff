@@ -4,7 +4,7 @@
 export const SITE_TITLE = "Valley of the Cool Trees";
 // export const SUB_TITLE = "Valley of the Cool Trees";
 export const SITE_DESCRIPTION =
-  "a little corner of paradise, deep in the forest, a place all to yourselves";
+  "Stunning exclusive use group camping site in South Wales";
 export const S3 = import.meta.env.PROD
   ? "https://brynoffee.s3.eu-west-2.amazonaws.com/videos"
   : "/video";
