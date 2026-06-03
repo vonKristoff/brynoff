@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "Contact Us | Book Group Camping or Retreats in Wales"
 description: "Contact us to book group camping in Wales. Enquiries for retreats, events and exclusive hire stays for groups of 20–40 people."
 pubDate: "Jul 08 2022"
 heroImage: "$lib/assets/otis-flowers.jpg"
