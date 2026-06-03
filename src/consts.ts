@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = "Valley of the Cool Trees";
 export const SITE_DESCRIPTION =
-  "Stunning exclusive use group camping site in South Wales";
+  "Stunning group camping in South Wales for large groups, retreats and gatherings. Exclusive hire site with fire pit, outdoor kitchen, shelter and off‑grid facilities for 20–40 guests.";
 export const S3 = import.meta.env.PROD
   ? "https://brynoffee.s3.eu-west-2.amazonaws.com/videos"
   : "/video";
