@@ -5,7 +5,9 @@ pubDate: "Jul 08 2022"
 heroImage: "$lib/assets/people-walking-forest.jpg"
 ---
 
-We have wildflower meadows, a stream (with a little plunge pool) and ancient woods for you to explore. On a sunny day, you won’t want to be anywhere else.
+Campers at Valley of the Cool Trees can explore a range of outdoor activities on site, in the forest and further afield. From waterfalls and wild swimming to campfires and cosy pubs, your group will have the best that South Wales has to offer.
+
+On site we have wildflower meadows, a stream (with a little plunge pool) and ancient woods for you to explore. On a sunny day, you won’t want to be anywhere else.
 
 There are also great walks and trails for hiking, mountain biking and horse-riding in the surrounding forest which includes remnants of the Celtic Rainforests that once covered all of this land.
 
