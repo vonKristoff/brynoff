@@ -5,6 +5,8 @@ pubDate: "Jul 08 2022"
 heroImage: "$lib/assets/otis-flowers.jpg"
 ---
 
+Get in touch to enquire about group camping, retreats or events at Valley of the Cool Trees. We welcome groups of 20–40 people and are happy to help you plan your visit.
+
 For bookings and enquiries, email us on info@valleyofthecooltrees.org
 or contact us on [whatsapp](https://wa.me/447899872237)
 
