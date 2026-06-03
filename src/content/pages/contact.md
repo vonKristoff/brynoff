@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Lorem ipsum dolor sit amet"
+description: "Contact us to book group camping in Wales. Enquiries for retreats, events and exclusive hire stays for groups of 20–40 people."
 pubDate: "Jul 08 2022"
 heroImage: "$lib/assets/otis-flowers.jpg"
 ---
