@@ -17,15 +17,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <BaseHead title={title} description={description} />
     <style>
       main {
-        /* width: calc(100% - 2em); */
         max-width: 100%;
         margin: 0;
       }
       .hero-image img {
         display: block;
         margin: 0 auto;
-        /* border-radius: 12px; */
-        /* box-shadow: var(--box-shadow); */
         height: 85dvh;
         width: 100%;
         object-fit: cover;
@@ -48,7 +45,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }
     </style>
   </head>
-
   <body>
     <Header />
     <main>
@@ -60,30 +56,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           <header class="content-grid">
             <div class="mb-16 font-secondary font-bold">
               <h1 class="text-4xl text-teal-700">
-                <Icon ctx="coolrees-dawn" nostroke size="3" />
-                {title}
+                <Icon ctx="coolrees-dawn" nostroke size="3" aria="true" />
+                <span>{title}</span>
               </h1>
             </div>
           </header>
-          <!-- <div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div> -->
           <slot />
         </div>
       </article>
     </main>
-
     <Footer />
   </body>
 </html>

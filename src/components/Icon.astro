@@ -6,6 +6,7 @@ interface Props {
   colour?: string;
   src?: string;
   nostroke?: string;
+  aria?: string;
 }
 const {
   ctx,
@@ -14,6 +15,7 @@ const {
   colour = "currentColor",
   src = "sprites",
   nostroke,
+  aria,
 } = Astro.props;
 const href = `/${src}.svg#icon-${ctx}`;
 ---
@@ -26,6 +28,7 @@ const href = `/${src}.svg#icon-${ctx}`;
   stroke-width={weight}
   stroke-linecap="round"
   stroke-linejoin="round"
+  {...aria && { "aria-hidden": "true" }}
 >
   <use {href}></use>
 </svg>
