@@ -1,7 +1,7 @@
 ---
 import Icon from "./Icon.astro";
 const today = new Date();
-import { SITE_TITLE } from "$lib/consts";
+import { HERO_TITLE } from "$lib/consts";
 ---
 
 <footer>
@@ -14,7 +14,7 @@ import { SITE_TITLE } from "$lib/consts";
     <div class="flex flex-col items-center">
       <Icon ctx="coolrees-noir" size="5" nostroke />
       <span
-        >&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</span
+        >&copy; {today.getFullYear()} {HERO_TITLE}. All rights reserved.</span
       >
     </div>
     <aside
