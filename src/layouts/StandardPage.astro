@@ -9,7 +9,8 @@ import Icon from "$lib/components/Icon.astro";
 
 type Props = CollectionEntry<"diary">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, heading, pubDate, updatedDate, heroImage } =
+  Astro.props;
 ---
 
 <html lang="en">
@@ -57,7 +58,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             <div class="mb-16 font-secondary font-bold">
               <h1 class="text-4xl text-teal-700">
                 <Icon ctx="coolrees-dawn" nostroke size="3" aria="true" />
-                <span>{title}</span>
+                <span>{heading}</span>
               </h1>
             </div>
           </header>

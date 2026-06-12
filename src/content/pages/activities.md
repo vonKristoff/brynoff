@@ -1,4 +1,5 @@
 ---
+heading: "Activities"
 title: "Outdoor Activities & Nature Experiences | Valley of the Cool Trees"
 description: "Outdoor activities for group camping in Wales. Mountains, waterfalls, woodland walks, wild swimming and more to keep your group entertained."
 pubDate: "Jul 08 2022"

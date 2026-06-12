@@ -9,7 +9,7 @@ const diary = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
-      // Transform string to Date object
+      heading: z.string(),
       pubDate: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
       heroImage: image().optional(),
@@ -21,6 +21,7 @@ const pages = defineCollection({
   // Type-check frontmatter using a schema
   schema: ({ image }) =>
     z.object({
+      heading: z.string(),
       title: z.string(),
       description: z.string(),
       // Transform string to Date object
