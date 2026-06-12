@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
-import StandardLayout from "$lib/layouts/BlogPage.astro";
+import BlogLayout from "$lib/layouts/BlogPage.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("diary");
@@ -13,9 +13,10 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"diary">;
 
 const post = Astro.props;
+const { slug } = Astro.params;
 const { Content } = await render(post);
 ---
 
-<StandardLayout {...post.data}>
+<BlogLayout {...post.data} {slug}>
   <Content />
-</StandardLayout>
+</BlogLayout>

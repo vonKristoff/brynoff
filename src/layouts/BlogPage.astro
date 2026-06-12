@@ -16,7 +16,6 @@ const { Content } = await render(post);
   pubDate={post!.data.pubDate}
   heroImage={post.data.heroImage}
 >
-  <slot />
   <div class="content-grid gap-y-8">
     <Content />
   </div>
