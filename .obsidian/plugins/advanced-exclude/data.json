@@ -1,0 +1,6 @@
+{
+  "excludeMode": "Full",
+  "obsidianIgnoreContent": "public\nsrc/components/\nsrc/layouts/\nsrc/pages/\nsrc/styles/",
+  "shouldIgnoreExcludedFiles": false,
+  "shouldIncludeGitIgnorePatterns": true
+}
