@@ -177,8 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,14 +194,19 @@
   },
   "active": "6282e0e50a499abe",
   "lastOpenFiles": [
-    "src/content/diary/2026/january/Untitled.md",
+    "src/content/diary/2026/january/sjkehgfkjsefgh.md",
+    "src/content/diary/2026/january/Weekly forage.md",
     "src/content/diary/2026/january/qams-story.mdx",
+    "src/content/pages/events.md",
+    "src/content/pages/contact.md",
+    "src/content/pages/camping.mdx",
+    "src/content/pages/activities.md",
+    "src/content/pages/about.mdx",
+    "README.md",
     "templates/entry.md",
     "Untitled",
     "templates",
     "src/content/diary/using-mdx.mdx",
-    "src/content/pages/activities.md",
-    "src/content/pages/about.mdx",
     "Untitled 1.base",
     "Untitled.base"
   ]
