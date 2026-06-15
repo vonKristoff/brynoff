@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/diary/using-mdx.mdx",
+                "file": "src/content/diary/2026/january/qams-story.mdx",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "using-mdx"
+              "title": "qams-story"
             }
           }
         ]
@@ -177,7 +177,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,11 +195,15 @@
   },
   "active": "6282e0e50a499abe",
   "lastOpenFiles": [
+    "src/content/diary/2026/january/Untitled.md",
     "src/content/diary/2026/january/qams-story.mdx",
+    "templates/entry.md",
+    "Untitled",
+    "templates",
+    "src/content/diary/using-mdx.mdx",
     "src/content/pages/activities.md",
     "src/content/pages/about.mdx",
     "Untitled 1.base",
-    "Untitled.base",
-    "src/content/diary/using-mdx.mdx"
+    "Untitled.base"
   ]
 }
