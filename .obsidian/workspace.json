@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/diary/2026/january/qams-story.mdx",
+                "file": "src/content/diary/Amir/2026/Heya.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "qams-story"
+              "title": "Heya"
             }
           }
         ]
@@ -181,22 +181,26 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "edit-mdx:New .mdx file": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "edit-mdx:New .mdx file": false
     }
   },
   "active": "6282e0e50a499abe",
   "lastOpenFiles": [
+    "src/content/diary/2026/january/qams-story.mdx",
+    "src/content/diary/Amir/2026/Heya.md",
+    "src/content/diary/Amir/2026/Untitled",
+    "src/content/diary/Amir/2026",
+    "src/content/diary/Amir",
     "src/content/diary/2026/january/sjkehgfkjsefgh.md",
     "src/content/diary/2026/january/Weekly forage.md",
-    "src/content/diary/2026/january/qams-story.mdx",
     "src/content/pages/events.md",
     "src/content/pages/contact.md",
     "src/content/pages/camping.mdx",
@@ -207,7 +211,6 @@
     "Untitled",
     "templates",
     "src/content/diary/using-mdx.mdx",
-    "Untitled 1.base",
-    "Untitled.base"
+    "Untitled 1.base"
   ]
 }
